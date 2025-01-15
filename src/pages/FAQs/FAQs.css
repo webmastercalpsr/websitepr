@@ -1,0 +1,133 @@
+.faqs-container {
+    padding: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.faqs-header {
+    color: #8F2446;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faqs-subheader {
+    color: #8F2446;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.faqs-paragraph {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 500px;
+    color: #694F57;
+}
+
+.faqs-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.faqs-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.faqs-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.faqs-images img {
+    max-width: 200px;
+    height: auto;
+}
+
+.faqs-images img:nth-child(2n) {
+    margin-top: 20px; /* Stagger the second column */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faqs-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .faqs-content {
+        flex-direction: column;
+    }
+
+    .faqs-images {
+        grid-template-columns: 1fr; /* Stack images in one column */
+    }
+
+    .faqs-images img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faqs-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .faqs-images img {
+        max-width: 120px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faqs-content {
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .faqs-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .faqs-images {
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faqs-images img {
+        max-width: 150px;
+    }
+
+    .faqs-images img:nth-child(2n) {
+        margin-top: 15px; /* Adjust stagger margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .faqs-images img {
+        max-width: 100px;
+    }
+
+    .faqs-subheader {
+        font-size: 1.2rem;
+    }
+
+    .faqs-paragraph {
+        font-size: 1rem;
+    }
+
+    .faqs-images {
+        grid-template-columns: 1fr;
+    }
+
+    .faqs-images img:nth-child(2n) {
+        margin-top: 0; /* Remove stagger for single column layout */
+    }
+}

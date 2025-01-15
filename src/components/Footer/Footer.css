@@ -1,0 +1,140 @@
+/* Footer container */
+.footer {
+    background-color: #F5F5F5;
+    color: #8F2446;
+    padding: 40px 10%;
+    text-align: left;
+
+  }
+  
+  /* Footer content wrapper */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer links */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links li {
+    margin: 0 15px;
+  }
+  
+  .footer-links a {
+    color: #8F2446;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer brand section */
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    margin-bottom: -30px;
+  }
+  
+  .footer-logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  /* Social icons */
+  .footer-social {
+    margin: 20px 0;
+    display: flex;
+  }
+  
+  .footer-social a {
+    margin: 0 15px;
+  }
+  
+  .social-logo {
+    width: 30px;
+    height: auto;
+  }
+  
+  .footer-social a:hover .social-logo {
+    opacity: 0.8;
+  }
+  
+  /* Copyright text */
+  .footer-content p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  
+  /* Medium screens (tablets, small laptops) */
+  @media (max-width: 768px) {
+    .footer-links li {
+      margin: 10px 8px;
+    }
+  
+    .footer-logo {
+      width: 50px;
+    }
+  
+    .footer-social a {
+      margin: 0 10px;
+    }
+  
+    .social-logo {
+      width: 25px;
+    }
+  }
+  
+  /* Small screens (mobile devices) */
+  @media (max-width: 480px) {
+    .footer-content {
+      padding: 20px 5%;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links li {
+      margin: 8px 0;
+    }
+  
+    .footer-brand {
+      flex-direction: column;
+    }
+  
+    .footer-logo {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+  
+    .footer-social {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-social a {
+      margin: 10px 0;
+    }
+  
+    .social-logo {
+      width: 25px;
+    }
+  
+    .footer-content p {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,53 @@
+.light-the-night-container {
+    padding: 20px;
+    text-align: center;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .light-the-night-header {
+    color: #8F2446;
+    margin-bottom: 30px;
+  }
+  
+  .light-the-night-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .light-the-night-paragraph {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #694F57;
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .light-the-night-image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+  
+  @media (max-width: 768px) {
+    .light-the-night-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .light-the-night-paragraph {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .light-the-night-image {
+      max-width: 100%;
+    }
+  }
+  

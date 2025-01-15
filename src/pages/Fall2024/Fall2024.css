@@ -1,0 +1,73 @@
+.fall2024-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.recruitment-button {
+    background-color: #8F2446;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.recruitment-button:hover {
+    background-color: #6f1d36;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.flyerfa24 {
+    max-width: 100%;
+    height: auto;
+}
+
+.letter-container {
+    max-width: 500px;
+    text-align: left;
+
+}
+
+.letter-header {
+    color: #8F2446;
+    margin-bottom: 10px;
+}
+
+.letter-paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #694F57;
+}
+
+.claire, .paulina {
+    max-width: 150px;  /* Smaller size for Paulina and Claire's images */
+    height: auto;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .letter-container {
+        text-align: center;
+    }
+}

@@ -1,0 +1,36 @@
+.accepted-majors-container {
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .accepted-majors-header {
+    color: #8F2446;
+    margin-bottom: 20px;
+  }
+  
+  .accepted-majors-paragraph {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #694F57;
+  }
+  
+  .accepted-majors-list {
+    list-style-position: inside;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  
+  .accepted-majors-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #694F57;
+  }
+  
+  .accepted-majors-note {
+    font-size: 1.1rem;
+    color: #694F57;
+  }
+  

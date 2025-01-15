@@ -1,0 +1,141 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px 10%;
+    padding-top:50px;
+    white-space: nowrap;
+}
+  
+/* Logo styling */
+.navbar-logo img {
+    width: 60px;
+    height: auto;
+}
+  
+/* Navbar menu */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+  
+/* Navbar items */
+.navbar-item {
+    position: relative;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #8F2446;
+    text-decoration: none;
+}
+
+.navbar-item-link {
+    text-decoration: none; /* Removes underline */
+    color: #8F2446; /* Set the text color */
+    padding: 10px 15px; /* Adds padding like other items */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-item:hover,
+.navbar-item-link:hover {
+    color: #BFA7C7;
+}
+  
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+  
+.navbar-item:hover .dropdown-menu {
+    display: block;
+}
+  
+/* Dropdown items */
+.dropdown-menu li {
+    list-style: none;
+}
+  
+.dropdown-menu a {
+    color: #8F2446;
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+  
+.dropdown-menu a:hover {
+    background-color: #F3F3F3;
+    color: #BFA7C7;
+}
+  
+/* Social icons */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+  
+.navbar-icons a {
+    margin-left: 20px;
+}
+  
+.navbar-icons img {
+    width: 30px;
+    height: auto;
+}
+  
+/* Responsive Design */
+  
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 768px) {
+    .navbar {
+      padding: 15px 5%;
+    }
+  
+    .navbar-item {
+      margin: 0 10px;
+      font-size: 14px;
+    }
+  
+    .navbar-icons a {
+      margin-left: 15px;
+    }
+}
+  
+/* Small screens (mobile devices) */
+@media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-menu {
+      flex-direction: column;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .navbar-item {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+  
+    .navbar-icons {
+      margin-top: 10px;
+    }
+  
+    .navbar-icons a {
+      margin-left: 10px;
+    }
+}

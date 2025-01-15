@@ -1,0 +1,51 @@
+.berkeley-project-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .berkeley-project-header {
+    color: #8F2446;
+    margin-bottom: 30px;
+  }
+  
+  .berkeley-project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .berkeley-project-paragraph {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #694F57;
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .berkeley-project-img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  
+  @media (max-width: 768px) {
+    .berkeley-project-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .berkeley-project-paragraph {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .berkeley-project-img {
+      max-width: 100%;
+    }
+  }
+  

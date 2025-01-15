@@ -1,0 +1,129 @@
+.involvement-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .involvement-header {
+    color: #8F2446;
+    font-size: 2rem;
+  }
+  
+  .involvement-paragraph {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: left;
+    color: #694F57;
+  }
+  
+  .professional-experience-header {
+    color: #8F2446;
+    margin-top: 40px;
+    font-size: 1.5rem;
+  }
+  
+  .company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  .company-logos img {
+    width: auto; 
+    height: 80px;
+    max-width: 400px;
+  }
+  
+
+  img[src*="companylogo11"] {
+    margin-top: 10px;
+    height: 40px; 
+  }
+
+  img[src*="companylogo24"] {
+    margin-top: 10px;
+    height: 50px; 
+  }
+
+  img[src*="companylogo20"] {
+    margin-top: -50px;
+    height: 170px; 
+  }
+
+  img[src*="companylogo16"] {
+    margin-top: 10px;
+    height: 40px; 
+  }
+  img[src*="companylogo17"] {
+    height: 60px; 
+  }
+  img[src*="companylogo21"] {
+
+    height: 130px; 
+  }
+  img[src*="companylogo22"] {
+    margin-top: -30px;
+    height: 130px; 
+  }
+  img[src*="companylogo23"] {
+    margin-top: -30px;
+    height: 130px; 
+  }
+  .clubs-header {
+    color: #8F2446;
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  
+  .clubs-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .clubs-column {
+    flex: 1; 
+    margin: 0 -100px;
+    min-width: 1px; 
+  }
+
+  
+  .clubs-column h3 {
+    color: #8F2446;
+    font-size: 1.25rem;
+  }
+  
+  .clubs-column ul {
+    list-style-type: none;
+    padding: 0;
+    color: #694F57;
+  }
+  
+  .clubs-column li {
+    margin: 5px 0;
+  }
+
+  @media (max-width: 768px) {
+    .clubs-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .clubs-column {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .company-logos img {
+      max-width: 80px;
+    }
+  
+    .clubs-column li {
+      font-size: 0.9rem;
+    }
+  }
+  
