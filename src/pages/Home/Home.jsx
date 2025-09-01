@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import presidents from '../../assets/presidents.png';
+import presidents from '../../assets/presidentsfa25.png';
 import home1 from '../../assets/home1.png'
 import sigmud from '../../assets/sigmud.png'
 
@@ -35,35 +35,13 @@ const Home = () => {
       {/* Letter Section */}
       <div className='letter-section'>
         <h2 className='letter-header'>Fall 2024 Recruitment</h2>
-        <p className='letter-text'>life's sweeter with phi rho</p>
-        <a href="#fall2024" className='learn-more-button'>learn more</a>
+        <p className='letter-text'>phi rho is the cherry on top</p>
+        <a href="fall2025" className='learn-more-button'>learn more</a>
         <div className='letter-content'>
           <div className='letter'>
-            <p>Hi! We are Anvi Emani and Nicole Parker and we are so excited to be the Co-Presidents of 
+            <p>Hi! We are Hailey Pham and Colleen Pangilinan and we are so excited to be the Co-Presidents of 
                 the Alpha Theta chapter of Phi Sigma Rho this year!<br/>
-                <br/>
-                “I joined Phi Rho during my freshman fall and it has by far been the best decision I made 
-                in college. Coming from Massachusetts, one of my biggest problems coming into college was 
-                finding a community at Berkeley that would feel like home. At my first coffee chat, the active 
-                I was paired with (who later became my big) took three hours out of her schedule to help me 
-                map out my four years at Berkeley, listen to my difficulties, and offer advice; immediately, 
-                I knew this would be the community for me. <br/>
-                <br/>
-                When I look back at college down the road, many of my memories will be the ones I made with my
-                 Phi Rho sisters. I’ve made lifelong friends to study with, go to concerts with, road trip with, 
-                 and simply just exist with. I have never been part of such a supportive, ambitious, and kind 
-                 group of girls, and many of the relationships I have made here have taught me what friendship is.
-                  Simply put, I could not imagine my life without Phi Rho.” - Anvi<br/>
-                  <br/>
-                  “I joined Phi Rho my freshman fall and I don’t think my college experience would have been the 
-                  same without this wonderful community. Phi Rho has been my rock at Berkeley, helping me through 
-                  the challenges of college since my freshman year. This incredible community not only made my 
-                  transition smoother but also became the source of lifelong friendships and academic inspiration.
-                   My Phi Rho family has exceeded all my expectations, offering the support I had hoped for and
-                    more. I can’t imagine my college journey without them. Filled with amazing women who make every
-                     day brighter with their kindness, motivation and accomplishments, Phi Rho is truly special. 
-                     I’m looking forward to an awesome year packed with fun, unforgettable moments and lots of 
-                     sisterly love!” - Nicole<br/>
+                
                 <br/>
                 We both couldn’t be more excited for recruitment and hope to see you there! In the meantime, 
                 please continue to explore our website, and feel free to reach out to us if you want to talk or 
@@ -71,7 +49,7 @@ const Home = () => {
                 <br/>
                 Phi Rho Love,<br/> 
                 <br/> 
-                Anvi & Nicole    
+                Hailey & Colleen  
             </p>
           </div>
           <img src={presidents} alt="Presidents" className='presidents-image' />

@@ -1,7 +1,7 @@
 import React from 'react';
 import './MeetTheSisters.css';
 
-
+import pi from '../../assets/Sisters/pi.png';
 import omicron from '../../assets/Sisters/omicron.png';
 import xi from '../../assets/Sisters/xi.png';
 import nu from '../../assets/Sisters/nu.png';
@@ -17,6 +17,7 @@ import delta from '../../assets/Sisters/delta.png';
 
 const MeetTheSisters = () => {
   const sisters = [
+    { img: pi, name: 'Pi (Fall 2024)' },
     { img: omicron, name: 'Omicron (Spring 2024)' },
     { img: xi, name: 'Xi (Fall 2023)' },
     { img: nu, name: 'Nu (Spring 2023)' },
@@ -27,7 +28,7 @@ const MeetTheSisters = () => {
     { img: theta, name: 'Theta (Fall 2019)' },
     { img: eta, name: 'Eta (Fall 2018)' },
     { img: zeta, name: 'Zeta (Spring 2018)' },
-    { img: epsilon, name: 'Epsilon  (Fall 2017)' },
+    { img: epsilon, name: 'Epsilon (Fall 2017)' },
     { img: delta, name: 'Delta (Fall 2016)' },
   ];
 

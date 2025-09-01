@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
-import Fall2024 from './pages/Fall2024/Fall2024';
+import Fall2025 from './pages/Fall2025/Fall2025';
 import AcceptedMajors from './pages/AcceptedMajors/AcceptedMajors';
 import Involvement from './pages/Involvement/Involvement';
 import FAQs from './pages/FAQs/FAQs';
@@ -26,7 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/fall2024" element={<Fall2024 />} />
+        <Route path="/fall2025" element={<Fall2025 />} />
         <Route path="/accepted-majors" element={<AcceptedMajors />} />
         <Route path="/involvement" element={<Involvement />} />
         <Route path="/faqs" element={<FAQs />}/>

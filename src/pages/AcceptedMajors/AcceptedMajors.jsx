@@ -54,7 +54,7 @@ const AcceptedMajors = () => {
         <li>Planetary Science</li>
       </ul>
       <p className="accepted-majors-note">
-      If you have questions about a major not listed above, please contact Clarie and Paulina at recruitment.calpsr@gmail.com
+      If you have questions about a major not listed above, please contact Claire at recruitment.calpsr@gmail.com
       </p>
     </div>
   );
