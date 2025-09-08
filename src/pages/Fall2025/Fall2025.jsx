@@ -1,8 +1,8 @@
 import React from 'react';
 import './Fall2025.css';
 
-import flyerfa25p1 from '../../assets/Fall2025/recruitmentfirstpage.png';
-import flyerfa25p2 from '../../assets/Fall2025/recruitmentinfo.png';
+import flyerfa25p1 from '../../assets/Fall2025/first_page.png'
+import flyerfa25p2 from '../../assets/Fall2025/second_page.png'
 import claire from '../../assets/Fall2025/claire.png';
 
 const Fall2025 = () => {
@@ -11,11 +11,9 @@ const Fall2025 = () => {
       <div className="buttons-container">
         <a href="https://airtable.com/appriCQ3VihYzfgbq/pagHBKBLmQt88Q3oM/form" className="recruitment-button">Interest Form</a>
         <a href="https://airtable.com/appriCQ3VihYzfgbq/shroXs4qPAGrAvX4w" className="recruitment-button">Request a Coffee Chat!</a>
-        <a href="https://complex-canid-726.notion.site/Phi-Sigma-Rho-Fall-25-Recruitment-2616cd4cd48380e194c0d4ca2a2e7102?pvs=143" className="recruitment-button">Recruitment Timeline</a>
+       <a href="https://complex-canid-726.notion.site/Phi-Sigma-Rho-Fall-25-Recruitment-2616cd4cd48380e194c0d4ca2a2e7102" className="recruitment-button">Recruitment Timeline</a>
         <a href="accepted-majors" className="recruitment-button">Accepted Majors</a>
       </div>
-      
-
       <div className="content-container">
         {/* Left column: flyers stacked */}
         <div className="flyers-column">

@@ -1,5 +1,11 @@
+:root{
+  /* 👉 change this to nudge flyer size */
+  --flyer-max: 380px;   /* was full column width; try 360–420px */
+}
+
+/* Page */
 .fall2025-container {
-  padding: 20px;
+  padding: 12px 12px;
   text-align: center;
 }
 
@@ -11,7 +17,6 @@
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
-
 .recruitment-button {
   background-color: #8F2446;
   color: white;
@@ -24,29 +29,31 @@
 }
 .recruitment-button:hover { background-color: #6f1d36; }
 
-/* Two equal columns */
+/* Two equal columns (left flyers, right letter) */
 .content-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;   /* equal width columns */
-  gap: 30px;
+  grid-template-columns: minmax(340px, 1fr) minmax(340px, 1fr);
+  gap: 16px;
   align-items: start;
   text-align: left;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Left column: flyers stacked */
+/* Left column: flyers stacked (slightly smaller) */
 .flyers-column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   width: 100%;
+  align-items: center;               /* center smaller flyers in the column */
 }
 .flyer-img {
-  width: 100%;
+  width: clamp(260px, 90%, var(--flyer-max));  /* smaller than full column */
   height: auto;
   border-radius: 10px;
   display: block;
+  margin: 0;
 }
 
 /* Right column: letter + photo */
@@ -57,11 +64,13 @@
   width: 100%;
 }
 
-.letter-container { width: 100%; }
-
+.letter-container {
+  width: 100%;
+  margin: 0;
+}
 .letter-header {
   color: #8F2446;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 .letter-paragraph {
   font-size: 1rem;
@@ -69,22 +78,25 @@
   color: #694F57;
 }
 
-/* Claire image under the message */
+/* Claire image under the message (kept modest so heights align better) */
 .claire {
-  width: 250px;
+  width: 240px;          /* was 250px; a touch smaller for balance */
   height: auto;
   border-radius: 10px;
   margin-top: 8px;
+  display: block;
 }
 
 /* Responsive: stack columns on small screens */
 @media (max-width: 768px) {
   .content-container {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-  .letter-container, .flyers-column {
-    text-align: center;
-  }
-  .letter-paragraph { text-align: left; } /* keep body readable */
+  .letter-container, .flyers-column { text-align: center; }
+  .letter-paragraph { text-align: left; }
   .claire { margin-left: auto; margin-right: auto; }
+
+  /* Let flyers breathe on mobile */
+  .flyer-img { width: clamp(240px, 85vw, 420px); }
 }

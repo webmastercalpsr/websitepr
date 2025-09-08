@@ -1,191 +1,211 @@
 /* General Styles */
 .home-page {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Title Section */
-  .title-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 40px 10%;
-    color: #8F2446;
-  }
-  
-  .title-container {
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-  }
-  
-  .title {
-    font-size: 5.5rem;
-    line-height: 1.2;
-    line-height: 0.8;
-  }
-  
-  .sub-title {
-    color: #BFA7C7;
-    font-size: 1.2rem;
-    margin-top: -30px;
-  }
-  
-  .home-image {
-    margin-left: 20px;
-    padding-right: 100px;
-  }
-  
-  .home-image img {
-    width: 500px; /* Adjust as needed */
-    height: auto;
-    display: block;
-  }
-  
-  .sigmud img{
-    position: absolute; /* Position absolutely to overlap */
-    top: 390px; 
-    right: 10%; 
-    left: 280px;
-    z-index: 10;
-    width: 20%;
+  font-family: Arial, sans-serif;
+}
 
-  } 
-  /* Wave Divider */
-  .custom-shape-divider-bottom-1724185175 {
-    width: 100vw;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 1;
-    transform: translateX(-8px);
-  }
-  
-  .custom-shape-divider-bottom-1724185175 svg {
-    position: relative;
-    display: block;
-    width: calc(154% + 1.3px);
-    height: 335px;
-    bottom: 0;
-  }
-  
-  .custom-shape-divider-bottom-1724185175 .shape-fill {
-    fill: #8F2446;
-  }
-  
-  /* Letter Section */
-  .letter-section {
-    background-color: #8F2446;
-    color: #FFFFFF;
-    padding: 40px 20px;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    box-sizing: border-box;
-    text-align: center;
-    position: relative; /* Allows for overlapping */
-    z-index: 2; /* Ensure it's above the wave divider */
-    transform: translateY(-30px); /* Adjust this value to control overlap */
-  }
-  
-  .letter-header {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .letter-text {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .learn-more-button {
-    background-color: #BFA7C7;
-    color: #8F2446;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 1rem;
-  }
-  
-  .learn-more-button:hover {
-    background-color: #a28baf;
-  }
-  
-  /* Letter Content */
-  .letter-content {
-    display: flex;
-    justify-content: space-between;
+/* Title Section */
+.title-section {
+  position: relative;              /* anchor penguin here */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 28px 6%;
+  color: #8F2446;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+}
+
+.title {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+
+.sub-title {
+  color: #BFA7C7;
+  font-size: 1.1rem;
+  margin-top: -16px;
+}
+
+.home-image {
+  margin-left: 16px;
+  padding-right: 24px;
+}
+
+.home-image img {
+  width: 480px;
+  height: auto;
+  display: block;
+}
+
+/* 🐧 Penguin — left & smaller */
+.sigmud {
+  position: absolute;
+  left: 6%;
+  top: 320px;                      /* tweak to taste */
+  z-index: 10;
+}
+.sigmud img {
+  width: clamp(110px, 14vw, 200px);
+  height: auto;
+  display: block;
+}
+
+/* Wave Divider */
+.custom-shape-divider-bottom-1724185175 {
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+  transform: translateX(-8px);
+}
+.custom-shape-divider-bottom-1724185175 svg {
+  position: relative;
+  display: block;
+  width: calc(154% + 1.3px);
+  height: 280px;                   /* shorter white area */
+  bottom: 0;
+}
+.custom-shape-divider-bottom-1724185175 .shape-fill {
+  fill: #8F2446;
+}
+
+/* ================================
+   Letter Section (maroon band)
+   - 4-row grid:
+     1) header
+     2) tagline
+     3) button
+     4) content (text+image)
+   ================================ */
+.letter-section {
+  background-color: #8F2446;
+  color: #FFFFFF;
+  padding: 8px 0 16px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  transform: translateY(-60px);
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto minmax(24px, 1fr) auto; /* header | tagline | BUTTON | content */
+  place-items: center;      /* centers children horizontally & vertically */
+  row-gap: 0;
+  text-align: center;
+}
+
+/* Row 1: Header (centered) */
+.letter-header {
+  grid-row: 1;
+  font-size: 2rem;
+  margin: 0 0 8px;
+  justify-self: center;
+}
+
+/* Row 2: Tagline (centered) */
+.letter-text {
+  grid-row: 2;
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+  justify-self: center;
+}
+
+/* Row 3: Button (centered, original purple) */
+.learn-more-button {
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
+  display: inline-block;
+  background-color: #BFA7C7;
+  color: #8F2446;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin: 0;
+  border: none;
+}
+.learn-more-button:hover { background-color: #a28baf; }
+
+/* Row 4: Content (text + image) */
+.letter-content {
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr; /* text slightly wider */
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 12px auto 16px;
+  padding: 0 16px;
+}
+
+.letter {
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+.letter p { margin: 0 0 12px; line-height: 1.45; }
+
+/* Presidents image (slightly smaller, responsive) */
+.presidents-image {
+  justify-self: end;
+  max-width: 480px;
+  width: 100%;
+  padding: 0;
+  height: auto;
+}
+.presidents-image img {
+  width: clamp(240px, 28vw, 480px);
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+/* In case the <img> has the class directly */
+img.presidents-image {
+  width: clamp(240px, 28vw, 480px);
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  justify-self: end;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title-section {
+    flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    padding-bottom: 80px;
-    flex-wrap: wrap; 
+    margin: 20px 5%;
+    text-align: center;
   }
-  
-  .letter {
-    width: 50%;
-    padding-right: 20px;
-    padding-top: 50px;
-    padding-left: 100px;
-    text-align: left;
+  .title-container { padding-left: 0; margin-bottom: 16px; }
+  .title { font-size: 3rem; }
+  .sub-title { font-size: 1rem; margin-top: 0; }
+
+  .sigmud { display: none; }       /* optional: hide penguin on small screens */
+
+  .home-image { margin-left: 0; padding-right: 0; text-align: center; }
+  .home-image img { width: 100%; max-width: 500px; }
+
+  .custom-shape-divider-bottom-1724185175 svg { height: 220px; }
+
+  .letter-section {
+    transform: translateY(-30px);
+    grid-template-rows: auto auto minmax(16px, 1fr) auto;
   }
-  
-  .presidents-image {
-    width: 30%;
-    height: auto;
-    padding-right: 100px;
+
+  .letter-content {
+    grid-template-columns: 1fr;     /* stack on mobile */
+    gap: 20px;
   }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .title-section {
-      flex-direction: column;
-      align-items: center;
-      margin: 20px 5%;
-      text-align: center;
-    }
-  
-    .title-container {
-      padding-left: 0; 
-      margin-bottom: 20px; 
-    }
-  
-    .title {
-      font-size: 3rem;
-    }
-  
-    .sub-title {
-      font-size: 1rem;
-      margin-top: 0; 
-    }
-    .sigmud {
-        display: none;
-      }
-  
-    .home-image {
-      margin-left: 0;
-      padding-right: 0; 
-      text-align: center; 
-    }
-  
-    .home-image img {
-      width: 100%;
-      max-width: 500px; 
-    }
-  
-    .letter-content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .letter {
-      width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  
-    .presidents-image {
-      width: 100%;
-      padding-right: 0;
-    }
-  }
+  .letter { width: 100%; padding: 0; }
+  .presidents-image { width: 100%; max-width: 520px; }
+}
