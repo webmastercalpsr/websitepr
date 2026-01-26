@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Fall2025 from './pages/Fall2025/Fall2025';
+import Spring2026 from './pages/Spring2026/Spring2026';
 import AcceptedMajors from './pages/AcceptedMajors/AcceptedMajors';
 import Involvement from './pages/Involvement/Involvement';
 import FAQs from './pages/FAQs/FAQs';
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/fall2025" element={<Fall2025 />} />
+        <Route path="/spring2026" element={<Spring2026 />} />
         <Route path="/accepted-majors" element={<AcceptedMajors />} />
         <Route path="/involvement" element={<Involvement />} />
         <Route path="/faqs" element={<FAQs />}/>

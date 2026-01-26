@@ -34,8 +34,8 @@ const Home = () => {
 
       {/* Letter Section */}
       <div className='letter-section'>
-        <h2 className='letter-header'>Fall 2024 Recruitment</h2>
-        <p className='letter-text'>phi rho is the cherry on top</p>
+        <h2 className='letter-header'>Spring 2026 Recruitment</h2>
+        <p className='letter-text'>once upon a phi rho</p>
         <a href="fall2025" className='learn-more-button'>learn more</a>
         <div className='letter-content'>
           <div className='letter'>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './MeetTheSisters.css';
 
+import rho from '../../assets/Sisters/rho.png';
 import pi from '../../assets/Sisters/pi.png';
 import omicron from '../../assets/Sisters/omicron.png';
 import xi from '../../assets/Sisters/xi.png';
@@ -17,6 +18,7 @@ import delta from '../../assets/Sisters/delta.png';
 
 const MeetTheSisters = () => {
   const sisters = [
+    { img: rho, name: 'Rho (Fall 2025)' },
     { img: pi, name: 'Pi (Fall 2024)' },
     { img: omicron, name: 'Omicron (Spring 2024)' },
     { img: xi, name: 'Xi (Fall 2023)' },
