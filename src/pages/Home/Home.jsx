@@ -39,17 +39,17 @@ const Home = () => {
         <a href="fall2025" className='learn-more-button'>learn more</a>
         <div className='letter-content'>
           <div className='letter'>
-            <p>Hi! We are Julianne Tenorio and Cadence Puls and we are so excited to be the Co-Presidents of 
-                the Alpha Theta chapter of Phi Sigma Rho this year!<br/>
+            <p>Hi!! We are Cadence and Julianne and we are sooooo excited to be the Co-Presidents 
+              of the Alpha Theta chapter of Phi Sigma Rho this year!<br/>
                 
                 <br/>
-                We both couldn’t be more excited for recruitment and hope to see you there! In the meantime, 
-                please continue to explore our website, and feel free to reach out to us if you want to talk or 
-                have any questions! You can reach us at calphirho@gmail.com.<br/> 
+                We both couldn’t be more excited for recruitment and hope to see you there! 
+                In the meantime, please continue to explore our website, and feel free to reach out to us if you want to talk or have any questions! 
+                You can reach us at president.calpsr@gmail.com.<br/> 
                 <br/>
                 Phi Rho Love,<br/> 
                 <br/> 
-                Julianne & Cadence  
+                Cadence & Julianne  
             </p>
           </div>
           <img src={presidents} alt="Presidents" className='presidents-image' />
