@@ -1,10 +1,10 @@
 :root{
   /* 👉 change this to nudge flyer size */
-  --flyer-max: 380px;   /* was full column width; try 360–420px */
+  --flyer-max: 480px;   /* was full column width; try 360–420px */
 }
 
 /* Page */
-.fall2025-container {
+.spring2026-container {
   padding: 12px 12px;
   text-align: center;
 }
@@ -79,7 +79,7 @@
 }
 
 /* Claire image under the message (kept modest so heights align better) */
-.claire {
+.sina {
   width: 240px;          /* was 250px; a touch smaller for balance */
   height: auto;
   border-radius: 10px;
@@ -95,7 +95,7 @@
   }
   .letter-container, .flyers-column { text-align: center; }
   .letter-paragraph { text-align: left; }
-  .claire { margin-left: auto; margin-right: auto; }
+  .sina { margin-left: auto; margin-right: auto; }
 
   /* Let flyers breathe on mobile */
   .flyer-img { width: clamp(240px, 85vw, 420px); }

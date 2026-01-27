@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import presidents from '../../assets/presidentsfa25.png';
+import presidents from '../../assets/presidentsSp26.png';
 import home1 from '../../assets/home1.png'
 import sigmud from '../../assets/sigmud.png'
 
@@ -39,7 +39,7 @@ const Home = () => {
         <a href="fall2025" className='learn-more-button'>learn more</a>
         <div className='letter-content'>
           <div className='letter'>
-            <p>Hi! We are Hailey Pham and Colleen Pangilinan and we are so excited to be the Co-Presidents of 
+            <p>Hi! We are Julianne Tenorio and Cadence Puls and we are so excited to be the Co-Presidents of 
                 the Alpha Theta chapter of Phi Sigma Rho this year!<br/>
                 
                 <br/>
@@ -49,7 +49,7 @@ const Home = () => {
                 <br/>
                 Phi Rho Love,<br/> 
                 <br/> 
-                Hailey & Colleen  
+                Julianne & Cadence  
             </p>
           </div>
           <img src={presidents} alt="Presidents" className='presidents-image' />
