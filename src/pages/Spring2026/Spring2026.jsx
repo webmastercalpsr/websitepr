@@ -26,7 +26,7 @@ const Spring2026 = () => {
         {/* Right column: letter + Claire photo */}
         <div className="letter-column">
           <div className="letter-container">
-            <h2 className="letter-header">DEAR POTENTIAL NEW MEMBERS,</h2>
+            <h2 className="letter-header1">DEAR POTENTIAL NEW MEMBERS,</h2>
             <p className="letter-paragraph">
               Hi there! <br /><br />
               We're Sina and Natalee, and we're thrilled to serve as your Recruitment Chairs this Spring. 

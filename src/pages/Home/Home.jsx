@@ -36,7 +36,7 @@ const Home = () => {
       <div className='letter-section'>
         <h2 className='letter-header'>Spring 2026 Recruitment</h2>
         <p className='letter-text'>once upon a phi rho</p>
-        <a href="fall2025" className='learn-more-button'>learn more</a>
+        <a href="spring2026" className='learn-more-button'>learn more</a>
         <div className='letter-content'>
           <div className='letter'>
             <p>Hi!! We are Cadence and Julianne and we are sooooo excited to be the Co-Presidents 
