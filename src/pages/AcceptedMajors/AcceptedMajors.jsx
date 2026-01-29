@@ -13,6 +13,7 @@ const AcceptedMajors = () => {
       The following majors also qualify:
       </p>
       <ul className="accepted-majors-list">
+        <li>Applied Mathematics</li>
         <li>Astrophysics</li>
         <li>Atmospheric Science</li>
         <li>Biochemistry and Molecular Biology</li>
@@ -42,6 +43,7 @@ const AcceptedMajors = () => {
         <li>Industrial Engineering and Operations Research</li>
         <li>Integrative Biology</li>
         <li>Marine Science</li>
+        <li>Mathematics</li>
         <li>Materials Science and Engineering</li>
         <li>Mechanical Engineering</li>
         <li>Microbial Biology</li>
@@ -52,6 +54,7 @@ const AcceptedMajors = () => {
         <li>Nuclear Engineering</li>
         <li>Nutritional Science</li>
         <li>Planetary Science</li>
+        <li>Public Health</li>
       </ul>
       <p className="accepted-majors-note">
       If you have questions about a major not listed above, please contact Sina or Natalee at recruitment.calpsr@gmail.com

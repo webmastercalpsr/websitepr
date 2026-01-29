@@ -68,7 +68,7 @@
   position: relative;
   display: block;
   width: calc(154% + 1.3px);
-  height: 280px;                   /* shorter white area */
+  height: 280px;                   /* shorter white area*/
   bottom: 0;
 }
 .custom-shape-divider-bottom-1724185175 .shape-fill {
@@ -104,11 +104,11 @@
 
 /* Row 1: Header (centered) */
 .letter-header {
+  color: white !important;
   grid-row: 1;
   font-size: 2rem;
   margin: 0 0 8px;
   justify-self: center;
-  color: white
 }
 
 /* Row 2: Tagline (centered) */
