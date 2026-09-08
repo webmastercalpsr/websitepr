@@ -61,7 +61,7 @@ const Navbar = () => {
           {dropdown === 'recruitment' && (
             <Dropdown
               items={[
-                { label: 'Spring 2026', href: '/spring2026' },
+                { label: 'Fall 2026', href: '/fall2026' },
                 { label: 'Accepted Majors', href: '/accepted-majors' },
               ]}
             />

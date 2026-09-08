@@ -57,7 +57,7 @@ const AcceptedMajors = () => {
         <li>Public Health</li>
       </ul>
       <p className="accepted-majors-note">
-      If you have questions about a major not listed above, please contact Sina or Natalee at recruitment.calpsr@gmail.com
+      If you have questions about a major not listed above, please contact Sina or Anna at recruitment.calpsr@gmail.com
       </p>
     </div>
   );
