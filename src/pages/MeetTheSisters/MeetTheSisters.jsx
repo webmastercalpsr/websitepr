@@ -15,9 +15,11 @@ import eta from '../../assets/Sisters/eta.png';
 import zeta from '../../assets/Sisters/zeta.png';
 import epsilon from '../../assets/Sisters/epsilon.png';
 import delta from '../../assets/Sisters/delta.png';
+import sigma from '../../assets/Sisters/sigma.png';
 
 const MeetTheSisters = () => {
   const sisters = [
+    { img: sigma, name: 'Sigma (Spring 2026)' },
     { img: rho, name: 'Rho (Fall 2025)' },
     { img: pi, name: 'Pi (Fall 2024)' },
     { img: omicron, name: 'Omicron (Spring 2024)' },

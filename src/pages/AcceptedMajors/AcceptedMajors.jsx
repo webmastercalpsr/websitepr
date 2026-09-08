@@ -23,6 +23,7 @@ const AcceptedMajors = () => {
         <li>Chemical Engineering</li>
         <li>Chemistry</li>
         <li>Civil Engineering</li>
+        <li>Cognitive Science</li>
         <li>Computer Science</li>
         <li>Data Science</li>
         <li>Developmental Genetics</li>
